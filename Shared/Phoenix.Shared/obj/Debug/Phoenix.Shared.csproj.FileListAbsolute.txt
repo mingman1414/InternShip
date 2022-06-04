@@ -1,0 +1,9 @@
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Shared\Phoenix.Shared\bin\Debug\Phoenix.Shared.dll
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Shared\Phoenix.Shared\bin\Debug\Phoenix.Shared.pdb
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Shared\Phoenix.Shared\bin\Debug\Microsoft.VisualStudio.LiveShare.dll
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Shared\Phoenix.Shared\bin\Debug\Microsoft.VisualStudio.LiveShare.xml
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Shared\Phoenix.Shared\obj\Debug\Phoenix.Shared.csproj.AssemblyReference.cache
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Shared\Phoenix.Shared\obj\Debug\Phoenix.Shared.csproj.CoreCompileInputs.cache
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Shared\Phoenix.Shared\obj\Debug\Phoenix.Shared.csproj.CopyComplete
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Shared\Phoenix.Shared\obj\Debug\Phoenix.Shared.dll
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Shared\Phoenix.Shared\obj\Debug\Phoenix.Shared.pdb

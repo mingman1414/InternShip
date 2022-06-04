@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:common="clr-namespace:Phoenix.Mobile.PageModels.Common" 
+             x:DataType="common:MultipleRatingPageModel"
+             xmlns:orderDetail="clr-namespace:Phoenix.Mobile.Core.Models.OrderDetail;assembly=Phoenix.Mobile.Core"
+             x:Class="Phoenix.Mobile.Pages.Common.MultipleRatingPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView ItemsSource="{Binding OrderDetails}"
+                      SelectedItem="{Binding SelectedItem}"
+                      SelectionMode="Single"
+                          HasUnevenRows="True"
+                          BackgroundColor="#ecf0f1"
+                          HorizontalOptions="FillAndExpand"
+                          VerticalOptions="FillAndExpand"
+                          HeightRequest="180">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="orderDetail:OrderDetailHistoryModel">
+                        <ViewCell>
+                            <Grid Margin="5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="40"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Grid.Row="0"
+                                       Grid.Column="0"
+                                       Grid.ColumnSpan="2"
+                                       Grid.RowSpan="3"
+                                       Source="{Binding ImagePath}"
+                                       Aspect="Fill"
+                                       Margin="5"/>
+                                <Label Grid.Row="0"
+                                       Grid.Column="2"
+                                       Text="{Binding ProductName}"
+                                       FontAttributes="Bold"/>
+                                <Label Grid.Row="1"
+                                       Grid.Column="2"
+                                       Text="{Binding Type}"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Đánh giá"
+                    Margin="20,0,20,20"
+                         BackgroundColor="#0d0b4d"
+                        TextColor="White"
+                    Command="{Binding RatingPageCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

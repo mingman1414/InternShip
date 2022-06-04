@@ -1,0 +1,17 @@
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Phoenix.Mobile\Phoenix.Mobile.Core\bin\Debug\netstandard2.0\Phoenix.Mobile.Core.deps.json
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Phoenix.Mobile\Phoenix.Mobile.Core\bin\Debug\netstandard2.0\Phoenix.Mobile.Core.dll
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Phoenix.Mobile\Phoenix.Mobile.Core\bin\Debug\netstandard2.0\Phoenix.Mobile.Core.pdb
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Phoenix.Mobile\Phoenix.Mobile.Core\bin\Debug\netstandard2.0\Phoenix.Framework.dll
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Phoenix.Mobile\Phoenix.Mobile.Core\bin\Debug\netstandard2.0\Phoenix.Shared.dll
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Phoenix.Mobile\Phoenix.Mobile.Core\bin\Debug\netstandard2.0\Phoenix.Shared.pdb
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Phoenix.Mobile\Phoenix.Mobile.Core\obj\Debug\netstandard2.0\Phoenix.Mobile.Core.csproj.AssemblyReference.cache
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Phoenix.Mobile\Phoenix.Mobile.Core\obj\Debug\netstandard2.0\Phoenix.Mobile.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Phoenix.Mobile\Phoenix.Mobile.Core\obj\Debug\netstandard2.0\RefitStubs.g.cs
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Phoenix.Mobile\Phoenix.Mobile.Core\obj\Debug\netstandard2.0\Phoenix.Mobile.Core.AssemblyInfoInputs.cache
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Phoenix.Mobile\Phoenix.Mobile.Core\obj\Debug\netstandard2.0\Phoenix.Mobile.Core.AssemblyInfo.cs
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Phoenix.Mobile\Phoenix.Mobile.Core\obj\Debug\netstandard2.0\Phoenix.Mobile.Core.csproj.CoreCompileInputs.cache
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Phoenix.Mobile\Phoenix.Mobile.Core\obj\Debug\netstandard2.0\Phoenix.Mobile.Core.csproj.Fody.CopyLocal.cache
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Phoenix.Mobile\Phoenix.Mobile.Core\obj\Debug\netstandard2.0\XamlC.stamp
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Phoenix.Mobile\Phoenix.Mobile.Core\obj\Debug\netstandard2.0\Phoenix.Mobile.Core.csproj.CopyComplete
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Phoenix.Mobile\Phoenix.Mobile.Core\obj\Debug\netstandard2.0\Phoenix.Mobile.Core.dll
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Phoenix.Mobile\Phoenix.Mobile.Core\obj\Debug\netstandard2.0\Phoenix.Mobile.Core.pdb

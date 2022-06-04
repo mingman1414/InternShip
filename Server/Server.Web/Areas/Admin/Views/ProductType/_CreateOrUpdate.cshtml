@@ -1,0 +1,16 @@
+﻿@using Falcon.Web.Mvc.HtmlExtensions
+@model Phoenix.Server.Web.Areas.Admin.Models.ProductType.ProductTypeModel
+@Html.ValidationSummary(true)
+@Html.HiddenFor(model => model.Id)
+<div class="grid grid-cols-12 gap-6 mt-5">
+    <div class="intro-y col-span-12 lg:col-span-6">
+        <div class="intro-y box p-5">
+            <div>
+                <label>Tên loại sản phẩm</label>
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control input w-full border mt-2" } })
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+        </div>
+    </div>
+</div>
+

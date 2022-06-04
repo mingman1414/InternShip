@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:common="clr-namespace:Phoenix.Mobile.PageModels.Common" 
+             x:Class="Phoenix.Mobile.Pages.Common.AccountPage"
+             x:DataType="common:AccountPageModel">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#d1d1d1">
+            <!--<Image Source="http://172.31.99.6:63199/Uploads/NSX/acer.png"
+                   HeightRequest="100"/>-->
+            <Grid BackgroundColor="#0d0b4d">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Image Grid.Row="0"
+                       Grid.Column="0"
+                       Grid.RowSpan="3"
+                       HeightRequest="60"
+                       WidthRequest="60"
+                       Source="@drawable/user_icon"
+                       HorizontalOptions="CenterAndExpand"
+                       Aspect="AspectFit"/>
+                <Label Grid.Row="0"
+                       Grid.Column="1"
+                       Grid.ColumnSpan="2"
+                       Text="{Binding Username}"
+                       FontAttributes="Bold"
+                       TextColor="White"/>
+                <Label Grid.Row="1"
+                       Grid.Column="1"
+                       Grid.ColumnSpan="2"
+                       Text="{Binding FullName}"
+                       TextColor="White"/>
+            </Grid>
+
+            <Button Text="Đơn hàng của tôi"
+                    Command="{Binding ViewOrderCommand}"
+                    Background="#0d0b4d"
+                    TextColor="White"
+                    Margin="10,10,10,5"/>
+            <Button Text="Chỉnh sửa thông tin cá nhân"
+                    Command="{Binding AccountDetailCommand}"
+                    Background="#0d0b4d"
+                    TextColor="White"
+                    Margin="10,5,10,5"/>
+            <StackLayout Orientation="Horizontal">
+                <!--<Button Text="Đổi mật khẩu"
+                        HorizontalOptions="StartAndExpand"
+                        Background="#0d0b4d"
+                    TextColor="White"
+                        WidthRequest="190"
+                    Margin="10,5,10,5"/>-->
+                <Button Text="Đăng xuất"
+                        HorizontalOptions="EndAndExpand"
+                        Command="{Binding LogoutCommand}"
+                        Background="#0d0b4d"
+                    TextColor="White"
+                        WidthRequest="190"
+                    Margin="5,5,10,5"/>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

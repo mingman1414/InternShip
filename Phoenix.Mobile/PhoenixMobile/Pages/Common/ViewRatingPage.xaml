@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:common="clr-namespace:Phoenix.Mobile.PageModels.Common" 
+              x:DataType="common:ViewRatingPageModel"
+             xmlns:rating="clr-namespace:Phoenix.Mobile.Core.Models.Rating;assembly=Phoenix.Mobile.Core"
+             x:Class="Phoenix.Mobile.Pages.Common.ViewRatingPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView ItemsSource="{Binding Ratings}"
+                          HasUnevenRows="True"
+                          BackgroundColor="#ecf0f1"
+                          HorizontalOptions="FillAndExpand"
+                          VerticalOptions="FillAndExpand"
+                          HeightRequest="180">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="rating:RatingModel">
+                        <ViewCell>
+                            <Grid Margin="5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="30"/>
+                                    <RowDefinition Height="30"/>
+                                    <RowDefinition Height="80"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Grid.Row="0"
+                                       Grid.Column="0"
+                                       Grid.ColumnSpan="2"
+                                       Grid.RowSpan="3"
+                                       Source="{Binding ProductImage}"
+                                       Aspect="Fill"
+                                       Margin="5"/>
+                                <Label Grid.Row="0"
+                                       Grid.Column="2"
+                                       Text="{Binding ProductName}"
+                                       FontAttributes="Bold"/>
+                                <Label Grid.Row="1"
+                                       Grid.Column="2"
+                                       Text="{Binding Type}"/>
+                                <StackLayout Orientation="Horizontal"
+                                             Grid.Row="3"
+                                             Grid.Column="0"
+                                             Margin="0,5,0,0">
+                                    <Label Text="Đánh giá: "
+                                           FontAttributes="Bold"/>
+                                    <Label Text="{Binding Rate}"/>
+                                    <Image Source="@drawable/ic_star"/>
+                                </StackLayout>
+                                <Label Grid.Row="4"
+                                       Grid.Column="0"
+                                       FontAttributes="Bold"
+                                       Text="Bình luận:"/>
+                                <Label Grid.Row="5"
+                                       Grid.Column="0"
+                                       Grid.ColumnSpan="3"
+                                       VerticalOptions="StartAndExpand"
+                                       VerticalTextAlignment="Start"
+                                       Text="{Binding Comment}"/>
+                            </Grid>
+                           
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

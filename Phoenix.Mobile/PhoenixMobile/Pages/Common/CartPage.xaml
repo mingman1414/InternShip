@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Phoenix.Mobile.Pages.Common.CartPage"
+             xmlns:common="clr-namespace:Phoenix.Mobile.PageModels.Common" 
+             xmlns:cartList="clr-namespace:Phoenix.Mobile.Core.Models.CartItem;assembly=Phoenix.Mobile.Core"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Name="CartPageDetail"
+             x:DataType="common:CartPageModel">
+
+    
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#d1d1d1">
+            <ListView ItemsSource="{Binding CartList}"
+                      SelectedItem="{Binding SelectedItem}"
+                      x:Name="ListCartItem"
+                      BackgroundColor="White"
+                      SeparatorColor="#d9dbdb"
+                      HorizontalOptions="FillAndExpand"
+                      VerticalOptions="FillAndExpand"
+                      HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="cartList:CartListModel">
+                        <ViewCell>
+                            <Grid Margin="5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="40"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition  />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <BoxView Color="Green"
+                                         Grid.RowSpan="3"/>
+                                <Image Source="{Binding Image1Path}"
+                                       Aspect="Fill"
+                                       Grid.RowSpan="3"
+                                       Grid.Column="0"
+                                       VerticalOptions="Center"/>
+                               
+                                <Label Grid.Column="1"
+                                       Grid.Row="0"
+                                       Grid.ColumnSpan="2"
+                                       Margin="5,0,0,0"
+                                       Text="{Binding ProductName}"
+                                       FontSize="Small"
+                                       FontAttributes="Bold"
+                                       HorizontalOptions="Start"
+                                       VerticalOptions="End" />
+
+                                <Label Grid.Row="1"
+                                       Grid.Column="1"
+                                       Margin="5,0,0,0"
+                                       Text="{Binding Type}"
+                                       FontSize="Small"
+                                       HorizontalOptions="StartAndExpand"
+                                       VerticalOptions="Center" />
+
+                                <Label Grid.Row="2"
+                                       Grid.Column="1"
+                                       Margin="5,0,0,0"
+                                       Text="{Binding Source={x:Reference stepper}, Path=Value, StringFormat='Số lượng: {0}'}"
+                                       BindingContext="{x:Reference stepper}"
+                                       FontSize="Small"
+                                       HorizontalOptions="Start"
+                                       VerticalOptions="Start" /> 
+
+                                <Stepper Grid.Row="3"
+                                         Grid.Column="0"
+                                         Grid.ColumnSpan="3"
+                                         Minimum="0"
+                                         Maximum="99"
+                                         HorizontalOptions="End"
+                                         x:Name="stepper"
+                                         Increment="1"
+                                         Value="{Binding Quantity}"/>
+
+                                <Label Grid.Column="2"
+                                       Grid.Row="1"
+                                       FontSize="Small"
+                                       TextColor="Red"
+                                       Text="{Binding Price,StringFormat='{0:N0} đ'}"    
+                                       FontAttributes="Bold"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+
+
+            <StackLayout BackgroundColor="#0d0b4d" VerticalOptions="EndAndExpand" >
+                <Button Text="Xóa"
+                        Margin="10"
+                        Command="{Binding RemoveItemCommand}"
+                        BackgroundColor="#007a7a"
+                        TextColor="White"/>
+                <Button Text="Mua hàng"
+                        Margin="10"
+                        BackgroundColor="#007a7a"
+                        TextColor="White"
+                        Command="{Binding ConfirmPageCommand}"/>
+
+
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

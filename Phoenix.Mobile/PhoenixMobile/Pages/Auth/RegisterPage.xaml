@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:converters="clr-namespace:Phoenix.Framework.Converters;assembly=Phoenix.Framework"
+             xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:xe="clr-namespace:XamEffects;assembly=XamEffects" 
+             xmlns:controls="clr-namespace:Phoenix.Mobile.Controls" 
+              xmlns:common="clr-namespace:Phoenix.Mobile.PageModels.Common"
+             xmlns:auth="clr-namespace:Phoenix.Mobile.PageModels.Auth" x:DataType="auth:RegisterPageModel"
+             x:Class="Phoenix.Mobile.Pages.Auth.RegisterPage"
+             ControlTemplate="{StaticResource FullScreenHasBack}">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Thông tin tài khoản"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Placeholder="Tên đăng nhập"
+                   Text="{Binding UserName}"/>
+            <Entry Placeholder="Mật khẩu"
+                   IsPassword="True"
+                   Text="{Binding Password}"/>
+            <Entry Placeholder="Nhập lại mật khẩu"
+                   IsPassword="True"
+                   Text="{Binding RetypePassword}"/>
+            <Label Text="Thông tin cá nhân"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"/>
+            <Entry Placeholder="Họ tên"
+                   Text="{Binding FullName}"/>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal">
+                    <RadioButton IsChecked="{Binding Male}"/>
+                    <Label Text="Nam"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <RadioButton IsChecked="{Binding Female}"/>
+                    <Label Text="Nữ"/>
+                </StackLayout>
+            </StackLayout>
+            <!--<Entry Placeholder="Ngày sinh"
+                   Text="{Binding Birthday, StringFormat='{0: dd/MM/yyyy}'}"/>-->
+
+            <Label Text="Ngày sinh"/>
+            <DatePicker Date="{Binding Birthday}"
+                        Format="dd/MM/yyyy"
+                        />
+
+            <Entry Placeholder="Số điện thoại"
+                   Text="{Binding Phone}"/>
+            <Entry Placeholder="Email"
+                   Text="{Binding Email}"/>
+            <Editor Placeholder="Địa chỉ"
+                    HeightRequest="80"
+                    Text="{Binding Address}"/>
+            <Button Text="Đăng ký"
+                    Command="{Binding CreateUserCommand}"
+                    Margin="20,0,20,20"
+                         BackgroundColor="#0d0b4d"
+                        TextColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

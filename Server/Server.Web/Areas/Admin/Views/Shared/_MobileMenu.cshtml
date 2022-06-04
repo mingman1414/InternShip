@@ -1,0 +1,119 @@
+﻿<div class="mobile-menu md:hidden">
+    <div class="mobile-menu-bar">
+        <a href="/" class="flex mr-auto">
+            <img alt="PCheck" class="w-6" src="~/assets/images/logo-phoenix-s.png">
+        </a>
+        <a href="javascript:;" id="mobile-menu-toggler"> <i data-feather="bar-chart-2" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+    </div>
+    <ul class="border-t border-theme-24 py-5 hidden">
+        <li>
+            <a href="index.html" class="menu">
+                <div class="menu__icon"> <i data-feather="home"></i> </div>
+                <div class="menu__title"> Dashboard </div>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" class="menu">
+                <div class="menu__icon"> <i data-feather="users"></i> </div>
+                <div class="menu__title"> Khách hàng <i data-feather="chevron-down" class="menu__sub-icon"></i> </div>
+            </a>
+            <ul class="">
+                <li>
+                    <a href="@Html.Raw(Url.Action("Index", "User"))" class="menu">
+                        <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                        <div class="menu__title"> Tài khoản người dùng </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="@Html.Raw(Url.Action("Index", "Customer"))" class="menu">
+                        <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                        <div class="menu__title"> Khách hàng </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="@Html.Raw(Url.Action("Index", "Rating"))" class="menu">
+                        <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                        <div class="menu__title"> Người dùng đánh giá </div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="javascript:;" class="menu">
+                <div class="menu__icon"> <i data-feather="grid"></i> </div>
+                <div class="menu__title"> Loại sản phẩm <i data-feather="chevron-down" class="menu__sub-icon"></i> </div>
+            </a>
+            <ul class="">
+                <li>
+                    <a href="@Html.Raw(Url.Action("Index", "ProductType"))" class="menu">
+                        <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                        <div class="menu__title"> Tài khoản người dùng </div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="javascript:;" class="menu">
+                <div class="menu__icon"> <i data-feather="hard-drive"></i> </div>
+                <div class="menu__title"> Hãng sản xuất <i data-feather="chevron-down" class="menu__sub-icon"></i> </div>
+            </a>
+            <ul class="">
+                <li>
+                    <a href="@Html.Raw(Url.Action("Index", "Vendor"))" class="menu">
+                        <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                        <div class="menu__title"> Hãng sản xuất </div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="javascript:;" class="menu">
+                <div class="menu__icon"> <i data-feather="list"></i> </div>
+                <div class="menu__title"> Sản phẩm <i data-feather="chevron-down" class="menu__sub-icon"></i> </div>
+            </a>
+            <ul class="">
+                <li>
+                    <a href="@Html.Raw(Url.Action("Index", "Product"))" class="menu">
+                        <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                        <div class="menu__title"> Sản phẩm </div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="javascript:;" class="menu">
+                <div class="menu__icon"> <i data-feather="shopping-cart"></i> </div>
+                <div class="menu__title"> Đơn hàng <i data-feather="chevron-down" class="menu__sub-icon"></i> </div>
+            </a>
+            <ul class="">
+                <li>
+                    <a href="@Html.Raw(Url.Action("Index", "Product"))" class="menu">
+                        <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                        <div class="menu__title"> Đơn hàng </div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="javascript:;" class="menu">
+                <div class="menu__icon"> <i data-feather="log-out"></i> </div>
+                <div class="menu__title"> Đăng xuất <i data-feather="chevron-down" class="menu__sub-icon"></i> </div>
+            </a>
+            <ul class="">
+                <li>
+                    <a href="@Html.Raw(Url.Action("LogOut", "Admin"))" class="menu">
+                        <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                        <div class="menu__title"> Đăng xuất </div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+ 
+    </ul>
+</div>
+<!-- END: Mobile Menu -->

@@ -1,0 +1,15 @@
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Server\Server.Data\bin\Debug\Phoenix.Server.Data.dll
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Server\Server.Data\bin\Debug\Phoenix.Server.Data.pdb
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Server\Server.Data\bin\Debug\EntityFramework.dll
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Server\Server.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Server\Server.Data\bin\Debug\Falcon.Core.dll
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Server\Server.Data\bin\Debug\Falcon.Web.Core.dll
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Server\Server.Data\bin\Debug\Microsoft.VisualStudio.LiveShare.dll
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Server\Server.Data\bin\Debug\EntityFramework.xml
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Server\Server.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Server\Server.Data\bin\Debug\Microsoft.VisualStudio.LiveShare.xml
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Server\Server.Data\obj\Debug\Phoenix.Server.Data.csproj.AssemblyReference.cache
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Server\Server.Data\obj\Debug\Phoenix.Server.Data.csproj.CoreCompileInputs.cache
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Server\Server.Data\obj\Debug\Phoenix.Server.Data.csproj.CopyComplete
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Server\Server.Data\obj\Debug\Phoenix.Server.Data.dll
+D:\ThucTap\BaoCaoThucTap-Final\ThucTapCuoiKhoa\Server\Server.Data\obj\Debug\Phoenix.Server.Data.pdb
